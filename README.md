@@ -55,3 +55,15 @@ Beberapa teknologi yang digunakan dalam proyek ini:
 - Maven
 - Docker Compose
 - WebClient (untuk komunikasi antar service)
+
+#Mengapa Command Pattern Dipilih?
+command pattern dipilih untuk memisahkan request handling dan business logic sehingga controller tidak mengakses secara langsung ke service dan hanya bicara pada command invoker sehingga kedepanya apabila terdapat fitur yang ingin ditambahkan menjadi lebih mudah
+
+#Apa itu Mono dalam Project Reactor
+mono dalam project reactor adalah reactive publisher yang merepresentasikan operasi asynchronous yang menghasilkan maksimal satu nilai atau kosong (0..1 item). Mono bersifat lazy dan non-blocking.
+
+non-blocking berarti thread tidak menunggu operasi I/O selesai, melainkan menggunakan event-driven callbacks ketika data sudah tersedia. sehingga satu event-loop thread dapat menangani banyak request secara asynchronous.
+
+#perbedaan mendasar WebClient dan HTTP client konvensional
+HTTP client konvensional seperti RestTemplate menggunakan model blocking thread-per-request, di mana thread menunggu response sebelum melanjutkan eksekusi. Sebaliknya, WebClient menggunakan reactive non-blocking I/O, sehingga thread tidak idle dan dapat menangani banyak request secara efisien dengan model event-driven.
+
