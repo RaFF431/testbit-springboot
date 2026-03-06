@@ -1,0 +1,41 @@
+[33mcommit 88e96fd247ac7a3a116d742a8838f4970280b58e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:24:00 2026 +0700
+
+    error handling insufficient stock
+
+[33mcommit 7d8f38b122c2d8eed3d7f6030878e45bad720a6e[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:22:05 2026 +0700
+
+    Implement Order creation and REST endpoints
+
+[33mcommit 3995de0a73b2ccc38ee275cebdcee08c1f900a15[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:21:50 2026 +0700
+
+    Add Order entity, repository, and request DTO
+
+[33mcommit c405f1ac09a15d0a9ef2bac67eb487d2f0703b08[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:21:15 2026 +0700
+
+    Add PATCH endpoint for stock reduction
+
+[33mcommit 2363b8408c9e5900bfef475637be88b502e2fd68[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:20:36 2026 +0700
+
+    Implement Product service and REST controller
+
+[33mcommit fc4596aec3780ee5f3fda686e673f6c1a4d1bb72[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:19:43 2026 +0700
+
+    Add Product entity and repository
+
+[33mcommit c233bcac8755376d671836476745be5856db1c3a[m
+Author: RaFF431 <rafael090105@gmail.com>
+Date:   Fri Mar 6 15:16:58 2026 +0700
+
+    Initialize multi-module Spring Boot project

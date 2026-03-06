@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -57,7 +58,10 @@ public class OrderService {
         Order order = new Order();
         order.setProductId(request.getProductId());
         order.setQuantity(request.getQuantity());
+
+        BigDecimal totalPrice = product.getPrice().multiply(BigDecimal.valueOf(request.getQuantity()));
         order.setStatus(OrderStatus.PENDING);
+        order.setTotalPrice(totalPrice);
         order.setCreatedAt(LocalDateTime.now());
 
         return repository.save(order);
